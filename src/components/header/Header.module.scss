@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  .image {
+    width: 30px;
+    height: 30px;
+    margin: 20px 20px 0 0;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}

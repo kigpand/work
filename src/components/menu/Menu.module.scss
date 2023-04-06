@@ -1,0 +1,71 @@
+@import "../../styles/color.scss";
+@import "../../styles/common.scss";
+
+.menu {
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(54, 54, 54);
+  color: $fontColor;
+  z-index: 100;
+  @include flex;
+  animation: anim 0.5s linear forwards;
+
+  .close {
+    z-index: 101;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    width: 50%;
+    font-size: 30px;
+    font-weight: 700;
+
+    li {
+      @include flex;
+      height: 150px;
+      position: relative;
+      color: white;
+      text-decoration: none;
+
+      &::after {
+        transition: all 0.3s ease;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #2a2a2a;
+      }
+
+      &:hover {
+        &::after {
+          top: auto;
+          bottom: 0;
+          height: 100%;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+
+  @keyframes anim {
+    0% {
+      top: -100vh;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+}

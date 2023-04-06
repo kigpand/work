@@ -1,0 +1,12 @@
+@import "../../styles/color.scss";
+@import "../../styles/common.scss";
+
+.portFolio {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: min(100vh);
+  background-color: $mainColor;
+  @include flex;
+  flex-direction: column;
+}

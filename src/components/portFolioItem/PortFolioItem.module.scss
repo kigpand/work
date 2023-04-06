@@ -1,0 +1,22 @@
+.portFolioItem {
+  width: 70%;
+  padding: 40px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+
+  .title {
+    font-weight: bold;
+    font-size: 6vw;
+  }
+
+  .content {
+    margin-top: 10px;
+    font-size: 1vw;
+    color: yellow;
+  }
+
+  &:hover {
+    transform: translateX(10px);
+  }
+}

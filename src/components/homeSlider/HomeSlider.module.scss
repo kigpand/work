@@ -1,0 +1,42 @@
+@import "../../styles/common.scss";
+@import "../../styles/color.scss";
+
+.homeSlider {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $mainColor;
+  display: block;
+  @include flex;
+  animation: anim 2s 1s forwards;
+
+  .img {
+    width: 25vw;
+    height: 30vh;
+    position: relative;
+
+    .image {
+      object-fit: contain;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(61, 61, 61);
+    bottom: 0;
+    position: absolute;
+  }
+
+  @keyframes anim {
+    0% {
+      top: 0;
+    }
+
+    100% {
+      top: -100vw;
+    }
+  }
+}

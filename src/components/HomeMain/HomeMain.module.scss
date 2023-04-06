@@ -1,0 +1,10 @@
+@import "../../styles/color.scss";
+@import "../../styles/common.scss";
+
+.homeMain {
+  width: 100%;
+  height: 100%;
+  background-color: $mainColor;
+  color: $fontColor;
+  @include flex;
+}
