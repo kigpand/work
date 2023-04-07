@@ -5,22 +5,22 @@ const PortfolioArr = [
   {
     title: "Recipe",
     content: "React + Typescript기반 요리 Recipe App",
-    url: "/portFolio/Recipe",
+    url: "/portfolio/recipe",
   },
   {
     title: "Pokemon 도감",
     content: "poke api를 활용한 웹앱 포켓몬 도감",
-    url: "/portFolio/Pokemon",
+    url: "/portfolio/Pokemon",
   },
   {
     title: "cloneStargram",
     content: "NextJS 기반 인스타그램 클론 사이트",
-    url: "portFolio/clonestargram",
+    url: "portfolio/clonestargram",
   },
   {
     title: "중고거래",
     content: "개인 공부용 개발 중고거래 사이트",
-    url: "portFolio/Shopping",
+    url: "portfolio/shopping",
   },
 ];
 

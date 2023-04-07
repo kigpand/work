@@ -1,5 +1,7 @@
+import styles from "./page.module.scss";
+
 const Career = () => {
-  return <div>career</div>;
+  return <div className={styles.career}>career</div>;
 };
 
 export default Career;
