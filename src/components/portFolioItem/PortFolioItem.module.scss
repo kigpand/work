@@ -1,3 +1,5 @@
+@import "../../styles/common.scss";
+
 .portFolioItem {
   width: 70%;
   padding: 40px 0;
@@ -18,5 +20,14 @@
 
   &:hover {
     transform: translateX(10px);
+  }
+
+  @include mobile {
+    .title {
+      font-size: 40px;
+    }
+    .content {
+      font-size: 14px;
+    }
   }
 }

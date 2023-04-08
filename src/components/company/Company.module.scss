@@ -1,0 +1,25 @@
+@import "../../styles/common.scss";
+
+.company {
+  width: 700px;
+  margin-top: 20px;
+
+  .title {
+    width: 100%;
+
+    .titleItem {
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+
+  @include mobile {
+    width: 90%;
+
+    .title {
+      .titleItem {
+        font-size: 20px;
+      }
+    }
+  }
+}

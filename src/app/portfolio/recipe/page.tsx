@@ -13,14 +13,14 @@ const Recipe = () => {
         <div className={styles.textTitle}>About project</div>
         <div className={styles.line}></div>
         <p className={styles.textContent}>
-          css gird와 component 구조를 조금 더 구조화를 하는 연습을 하기 위해
-          진행한 프로젝트입니다.
+          css gird와 component 구조를 조금 더 깔끔하고 재사용성 있게 만드는
+          연습을 하기 위해 진행한 프로젝트입니다.
           <br />
           요리 레시피로 진행한 이유는 취미가 요리이기도 하고 언제가 될지는
           모르겠지만
           <br />
-          서버까지 구축을 완료하여 저만의 작은 웹 앱을 만들어 보고 싶은 욕심도
-          있습니다.
+          서버까지 구축을 완료하여 저만의 작은 웹 앱을 만들어 보고 싶은
+          욕심때문입니다.
           <br />
         </p>
       </div>

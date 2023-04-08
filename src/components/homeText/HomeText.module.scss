@@ -1,3 +1,5 @@
+@import "../../styles/common.scss";
+
 .homeText {
   font-size: 2rem;
   font-weight: 700;
@@ -5,6 +7,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 
   .title {
     width: 100%;
@@ -16,12 +19,13 @@
   }
 
   .sideTitle {
-    position: relative;
+    position: absolute;
     margin-top: 10px;
     color: lightgray;
     font-size: 13px;
     opacity: 0;
     transition: 1s;
+    bottom: 43%;
   }
 
   .btns {
@@ -62,6 +66,20 @@
   @keyframes blink {
     50% {
       border-color: transparent;
+    }
+  }
+
+  @include mobile {
+    font-size: 16px;
+
+    .title {
+      animation: typing 2s steps(29), blink 0.5s step-end infinite alternate;
+    }
+
+    .sideTitle {
+      padding: 0 10px;
+      font-size: 10px;
+      bottom: 45%;
     }
   }
 }

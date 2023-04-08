@@ -1,0 +1,91 @@
+@import "../../styles/common.scss";
+
+.companyItem {
+  margin-bottom: 50px;
+
+  .title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin-top: 10px;
+    color: black;
+
+    .info {
+      margin-top: 20px;
+      width: 35%;
+      height: 100%;
+      background-color: lightgray;
+      padding: 10px;
+
+      .items {
+        display: flex;
+        font-size: 14px;
+        margin-top: 10px;
+
+        &:last-child {
+          margin-top: 30px;
+        }
+
+        .itemTitle {
+          font-weight: bold;
+          width: 100px;
+          margin-left: 5px;
+          margin-top: 10px;
+        }
+
+        .itemText {
+          display: flex;
+          flex-direction: column;
+
+          div {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .content {
+      margin-top: 20px;
+      width: 65%;
+      height: 100%;
+      padding: 10px;
+      font-size: 14px;
+      background-color: white;
+
+      .contentTitle {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-weight: bold;
+      }
+
+      .contentItem {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @include mobile {
+    .title {
+      font-size: 15px;
+    }
+
+    .main {
+      .info {
+        .items {
+          font-size: 13px;
+          flex-direction: column;
+        }
+      }
+
+      .content {
+        font-size: 12px;
+      }
+    }
+  }
+}
