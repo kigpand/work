@@ -11,4 +11,13 @@ body {
       top: -100vh;
     }
   }
+
+  @keyframes cardOut {
+    0% {
+      left: 10px;
+    }
+    100% {
+      left: -400px;
+    }
+  }
 }

@@ -35,18 +35,40 @@
     bottom: 20px;
     opacity: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     transition: 1s;
 
-    img {
-      background-color: white;
-      padding: 5px;
-      border-radius: 4px;
-      margin-left: 10px;
-      cursor: pointer;
+    .btnTitle {
+      width: 100%;
+      font-size: 13px;
+      margin-bottom: 20px;
+      animation: btnTitleAnim 0.8s infinite alternate linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-      &:hover {
-        transform: translateY(-3px);
+      div {
+        margin-bottom: 5px;
+      }
+    }
+
+    .imgs {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        background-color: white;
+        padding: 5px;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-3px);
+        }
       }
     }
   }
@@ -80,6 +102,15 @@
       padding: 0 10px;
       font-size: 10px;
       bottom: 45%;
+    }
+  }
+
+  @keyframes btnTitleAnim {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(5px);
     }
   }
 }

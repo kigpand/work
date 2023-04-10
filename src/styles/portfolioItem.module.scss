@@ -6,58 +6,65 @@
   height: 100%;
   background-color: $mainColor;
   color: $fontColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow: hidden;
   padding-bottom: 50px;
 
-  .header {
-    position: relative;
-    width: 60%;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-30px);
+    animation: anim 1s linear forwards;
 
-    .title {
-      margin-top: 80px;
-      font-size: 40px;
-      font-weight: bold;
-    }
+    .header {
+      position: relative;
+      width: 60%;
 
-    .miniTitle {
-      margin-top: 5px;
-      color: lightgray;
-    }
-  }
+      .title {
+        margin-top: 80px;
+        font-size: 40px;
+        font-weight: bold;
+      }
 
-  .texts {
-    margin-top: 20px;
-    width: 60%;
-
-    .textTitle {
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    .textContent {
-      line-height: 30px;
-    }
-
-    .textUl {
-      li {
-        font-size: 20px;
-        line-height: 30px;
+      .miniTitle {
+        margin-top: 5px;
+        color: lightgray;
       }
     }
 
-    .linkItem {
-      margin-top: 10px;
-      font-size: 20px;
-    }
+    .texts {
+      margin-top: 20px;
+      width: 60%;
 
-    a {
-      color: $fontColor;
-      &:hover {
-        color: blue;
-        text-decoration: underline;
+      .textTitle {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .textContent {
+        line-height: 30px;
+      }
+
+      .textUl {
+        li {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      .linkItem {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      a {
+        color: $fontColor;
+        &:hover {
+          color: blue;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -72,32 +79,45 @@
   @include mobile {
     font-size: 15px;
 
-    .header {
-      width: 90%;
+    .container {
+      .header {
+        width: 90%;
 
-      .title {
-        font-size: 30px;
-      }
-    }
-
-    .texts {
-      width: 90%;
-
-      .textTitle {
-        font-size: 20px;
-      }
-
-      .textUl {
-        li {
-          font-size: 15px;
-          line-height: 20px;
+        .title {
+          font-size: 30px;
         }
       }
 
-      .linkItem {
-        margin-top: 10px;
-        font-size: 15px;
+      .texts {
+        width: 90%;
+
+        .textTitle {
+          font-size: 20px;
+        }
+
+        .textUl {
+          li {
+            font-size: 15px;
+            line-height: 20px;
+          }
+        }
+
+        .linkItem {
+          margin-top: 10px;
+          font-size: 15px;
+        }
       }
+    }
+  }
+
+  @keyframes anim {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
     }
   }
 }

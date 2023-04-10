@@ -10,7 +10,7 @@ const CompanyItem = ({ company }: ICompanyItem) => {
   return (
     <div className={styles.companyItem}>
       <div className={styles.title}>
-        {company.title} ({company.date})
+        <strong>{company.title}</strong> - {company.date}
       </div>
       <div className={styles.main}>
         <div className={styles.info}>

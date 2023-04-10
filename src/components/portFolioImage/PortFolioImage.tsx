@@ -39,6 +39,14 @@ const srcObj: any = {
   mobileShopping2: "/imgs/shopping/mobileShopping2.png",
   mobileShopping3: "/imgs/shopping/mobileShopping3.png",
   mobileShopping4: "/imgs/shopping/mobileShopping4.png",
+  recipe: "/imgs/recipe/recipe.png",
+  recipe2: "/imgs/recipe/recipe2.png",
+  recipe3: "/imgs/recipe/recipe3.png",
+  recipe4: "/imgs/recipe/recipe4.png",
+  mobileRecipe1: "/imgs/recipe/mobileRecipe.png",
+  mobileRecipe2: "/imgs/recipe/mobileRecipe2.png",
+  mobileRecipe3: "/imgs/recipe/mobileRecipe3.png",
+  mobileRecipe4: "/imgs/recipe/mobileRecipe4.png",
 };
 
 const PortFolioImage = ({ title, src }: PortFolioImage) => {
@@ -63,6 +71,9 @@ const PortFolioImage = ({ title, src }: PortFolioImage) => {
         }
         if (title === "shopping") {
           imgRef.current.src = srcObj["shopping1"];
+        }
+        if (title === "recipe") {
+          imgRef.current.src = srcObj["recipe1"];
         }
         btnRef.current?.childNodes.forEach((child: any, i: number) => {
           if (i === 0) {
@@ -89,6 +100,9 @@ const PortFolioImage = ({ title, src }: PortFolioImage) => {
         }
         if (title === "shopping") {
           imgRef.current.src = srcObj["mobileShopping1"];
+        }
+        if (title === "recipe") {
+          imgRef.current.src = srcObj["mobileRecipe1"];
         }
         btnRef.current?.childNodes.forEach((child: any, i: number) => {
           if (i === 0) {
@@ -118,7 +132,10 @@ const PortFolioImage = ({ title, src }: PortFolioImage) => {
           imgRef.current.src = !mobile
             ? srcObj["shopping1"]
             : srcObj["mobileShopping1"];
-
+        if (title === "recipe")
+          imgRef.current.src = !mobile
+            ? srcObj["recipe1"]
+            : srcObj["mobileRecipe1"];
         btnRef.current?.childNodes.forEach((child: any, i: number) => {
           if (i === 0) {
             child.style.backgroundColor = "white";
@@ -142,7 +159,10 @@ const PortFolioImage = ({ title, src }: PortFolioImage) => {
           imgRef.current.src = !mobile
             ? srcObj["shopping2"]
             : srcObj["mobileShopping2"];
-
+        if (title === "recipe")
+          imgRef.current.src = !mobile
+            ? srcObj["recipe2"]
+            : srcObj["mobileRecipe2"];
         btnRef.current?.childNodes.forEach((child: any, i: number) => {
           if (i === 1) {
             child.style.backgroundColor = "white";
@@ -166,6 +186,10 @@ const PortFolioImage = ({ title, src }: PortFolioImage) => {
           imgRef.current.src = !mobile
             ? srcObj["shopping3"]
             : srcObj["mobileShopping3"];
+        if (title === "recipe")
+          imgRef.current.src = !mobile
+            ? srcObj["recipe3"]
+            : srcObj["mobileRecipe3"];
 
         btnRef.current?.childNodes.forEach((child: any, i: number) => {
           if (i === 2) {
@@ -190,6 +214,10 @@ const PortFolioImage = ({ title, src }: PortFolioImage) => {
           imgRef.current.src = !mobile
             ? srcObj["shopping4"]
             : srcObj["mobileShopping4"];
+        if (title === "recipe")
+          imgRef.current.src = !mobile
+            ? srcObj["recipe4"]
+            : srcObj["mobileRecipe4"];
 
         btnRef.current?.childNodes.forEach((child: any, i: number) => {
           if (i === 3) {
