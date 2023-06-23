@@ -39,7 +39,7 @@ const srcObj: any = {
   mobileShopping2: "/imgs/shopping/mobileShopping2.png",
   mobileShopping3: "/imgs/shopping/mobileShopping3.png",
   mobileShopping4: "/imgs/shopping/mobileShopping4.png",
-  recipe: "/imgs/recipe/recipe.png",
+  recipe1: "/imgs/recipe/recipe.png",
   recipe2: "/imgs/recipe/recipe2.png",
   recipe3: "/imgs/recipe/recipe3.png",
   recipe4: "/imgs/recipe/recipe4.png",
