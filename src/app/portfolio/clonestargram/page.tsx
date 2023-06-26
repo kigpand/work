@@ -14,23 +14,21 @@ const Clonestargram = () => {
           <div className={styles.textTitle}>About project</div>
           <div className={styles.line}></div>
           <p className={styles.textContent}>
-            Shopping 사이트를 구현하면서 제대로된 DB 사용과 server 통신을 제대로
-            해보고 싶어
+            Next.js 연습용 토이 프로젝트입니다.
             <br />
-            가장 적절한 예시가 인스타그램이라 생각해 시도하게 됬습니다.
+            스타일링은 Scss를 사용했으며 상태관리로 Zustand를 사용했습니다.
             <br />
-            NodeJs와 MySQL을 사용해 처음으로 서버통신을 구현을 해봤고 미숙하지만
-            배포까지 했습니다.
+            혼자 진행한 토이 프로젝트 중 가장 규모가 컸던 작업이었으며 UI 역시
+            가장 신경을 많이 쓴 프로젝트입니다.
             <br />
-            또한 Login 작업을 하면서 쿠키와 세션의 개념과 사용 용도를 공부할 수
+            진행을 하면서 SSG, SSR, CSR의 동작 방식과 어떤 상황에서 써야하는지를
+            확실하게 배울 수 있었고
+            <br />
+            Sanity 사용을 통해 Headless CMS의 환경에 대해 공부를 할 수
             있었습니다.
             <br />
-            상태관리는 Zustand로 처리했습니다.
-            <br />
-            많이 미숙하지만 NextJs를 사용해보면서 SSR에 대해서 공부를 하게
-            되었고 그에 대한 필요성을 확실히 느꼈습니다.
-            <br />
-            현재는 이슈 발생으로 인해 호스팅 중단 중에 있습니다.
+            현재 코드의 부족함을 많이 느껴 지속적으로 리팩토링 진행 중에
+            있습니다.
           </p>
         </div>
         <div className={styles.texts}>
@@ -39,11 +37,9 @@ const Clonestargram = () => {
           <ul className={styles.textUl}>
             <li>HTML</li>
             <li>CSS</li>
-            <li>Javascript</li>
+            <li>Typescript</li>
             <li>NextJS</li>
             <li>ZuStand</li>
-            <li>NodeJS</li>
-            <li>MySQL</li>
           </ul>
         </div>
         <div className={styles.texts}>
@@ -60,7 +56,14 @@ const Clonestargram = () => {
             </a>
           </div>
           <div className={styles.linkItem}>
-            현재 Clonestargram은 호스팅 중단중입니다...
+            Page:{" "}
+            <a
+              href="https://clonestargram-2z3dxbcae-kigpand.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://clonestargram-2z3dxbcae-kigpand.vercel.app/
+            </a>
           </div>
         </div>
       </div>

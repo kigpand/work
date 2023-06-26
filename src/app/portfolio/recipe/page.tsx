@@ -14,15 +14,13 @@ const Recipe = () => {
           <div className={styles.textTitle}>About project</div>
           <div className={styles.line}></div>
           <p className={styles.textContent}>
-            css gird와 component 구조를 조금 더 깔끔하고 재사용성 있게 만드는
-            연습을 하기 위해 진행한 프로젝트입니다.
+            component 구조를 조금 더 깔끔하고 재사용성 있게 만드는 연습을 하기
+            위해 진행한 프로젝트입니다.
             <br />
-            요리 레시피로 진행한 이유는 취미가 요리이기도 하고 언제가 될지는
-            모르겠지만
+            최대한 custom hook 사용에 능숙하게 하기 위해 구글링이 아닌 자체
+            제작만 했으며
             <br />
-            서버까지 구축을 완료하여 저만의 작은 웹 앱을 만들어 보고 싶은
-            욕심때문입니다.
-            <br />
+            렌더링 최적화를 위해 메모이제이션 함수들을 공부하고 사용했습니다.
           </p>
         </div>
         <div className={styles.texts}>
